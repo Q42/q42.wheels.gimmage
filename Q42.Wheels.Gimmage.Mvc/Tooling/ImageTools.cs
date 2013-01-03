@@ -10,7 +10,6 @@ namespace Q42.Wheels.Gimmage.Tooling
   /// </summary>
   public class ImageTools
   {
-
     /// <summary>
     /// Gets quantizer
     /// </summary>

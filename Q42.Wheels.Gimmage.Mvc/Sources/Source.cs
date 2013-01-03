@@ -2,7 +2,7 @@
 
 namespace Q42.Wheels.Gimmage.Sources
 {
-  public class Source : ISource
+  internal class Source : ISource
   {
     public Source(string name, string source, SourceType type)
     {

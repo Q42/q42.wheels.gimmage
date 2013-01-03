@@ -3,11 +3,11 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <authors>Mark van Straten</authors>
+    <authors>Lukas van Driel, Mark van Straten</authors>
     <owners>$author$</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Cleanup of Gimmage, extracted to NuGet package</releaseNotes>
+    <releaseNotes>Cleanup of Gimmage, extracted to NuGet package. Gimmage is DEPRECATED technology, use a better newer external tool for this</releaseNotes>
     <copyright>Copyright 2012</copyright>
     <tags>Q42 Q42.Wheels Gimmage</tags>
 

@@ -3,6 +3,9 @@ using Q42.Wheels.Gimmage.ImageManipulation;
 
 namespace Q42.Wheels.Gimmage.Templating
 {
+  /// <summary>
+  /// example template with some filters 
+  /// </summary>
   public class ExampleTemplate : AbstractTemplate
   {
     public override List<ImageFilters.Filter> Filters
