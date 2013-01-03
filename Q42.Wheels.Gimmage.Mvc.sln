@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gimmage.Mvc", "Q42.Wheels.Gimmage.Mvc\Gimmage.Mvc.csproj", "{089EC104-62A7-43D4-83CC-C8314BD799C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gimmage.Engine", "Q42.Wheels.Gimmage\Gimmage.Engine.csproj", "{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		9292-acceptation|Any CPU = 9292-acceptation|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ws04|Any CPU = ws04|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.9292-acceptation|Any CPU.ActiveCfg = 9292-acceptation|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.9292-acceptation|Any CPU.Build.0 = 9292-acceptation|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.ws04|Any CPU.ActiveCfg = ws04|Any CPU
+		{089EC104-62A7-43D4-83CC-C8314BD799C4}.ws04|Any CPU.Build.0 = ws04|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.9292-acceptation|Any CPU.ActiveCfg = 9292-acceptation|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.9292-acceptation|Any CPU.Build.0 = 9292-acceptation|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.ws04|Any CPU.ActiveCfg = ws04|Any CPU
+		{2EA4357A-AA4F-415B-8B5D-E8A43FC50F10}.ws04|Any CPU.Build.0 = ws04|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
