@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Q42.Wheels.Gimmage.Config
 {
-  public static class ConfigTools
+  internal static class ConfigTools
   {
     public static DirectoryInfo GetDirectory(string path, bool createDirectory)
     {

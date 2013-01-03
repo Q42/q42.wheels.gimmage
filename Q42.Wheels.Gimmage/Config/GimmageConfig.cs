@@ -2,7 +2,7 @@
 
 namespace Q42.Wheels.Gimmage.Config
 {
-  public static class GimmageConfig
+  internal static class GimmageConfig
   {
     private static GimmageConfigurationSection config = null;
 

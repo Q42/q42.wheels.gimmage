@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Q42.Wheels.Gimmage.Config
 {
-  public class CacheElement : ConfigurationElement
+  internal class CacheElement : ConfigurationElement
   {
     [ConfigurationProperty("enabled", IsRequired = false, DefaultValue = false)]
     public bool Enabled

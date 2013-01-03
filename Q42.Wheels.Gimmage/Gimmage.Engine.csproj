@@ -98,11 +98,8 @@
     <Compile Include="Templating\AbstractTemplate.cs" />
     <Compile Include="Templating\DefaultTemplate.cs" />
     <Compile Include="Templating\ExampleTemplate.cs" />
-    <Compile Include="Tooling\Cache.cs" />
-    <Compile Include="Tooling\Download.cs" />
     <Compile Include="Tooling\ImageTools.cs" />
     <Compile Include="Tooling\MimeType.cs" />
-    <Compile Include="Tooling\WebPreviewBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
