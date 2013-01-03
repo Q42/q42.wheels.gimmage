@@ -77,6 +77,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="README_GIMMAGE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Q42.Wheels.Gimmage.Mvc.nuspec" />
     <Content Include="web.config.transform">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
