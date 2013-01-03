@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Configuration;
 using Q42.Wheels.Gimmage.Interfaces;
+using System.Diagnostics;
 
 namespace Q42.Wheels.Gimmage.Config
 {
@@ -50,13 +51,20 @@ namespace Q42.Wheels.Gimmage.Config
     }
 
     [ConfigurationProperty("type")]
+    public string Sourcetype
+    {
+      get
+      {
+        return this["type"] as string;
+      }
+    }
+
     public SourceType Type
     {
       get
       {
-        if(!string.IsNullOrWhiteSpace(this["type"] as string)){
-          return (SourceType)Enum.Parse(typeof(SourceType), this["type"] as string);
-        }
+        if (!string.IsNullOrWhiteSpace(Sourcetype))
+          return (SourceType)Enum.Parse(typeof(SourceType), Sourcetype);
 
         //auto-detect type of this source
         if (Directory.ToLower().StartsWith("http://") || Directory.ToLower().StartsWith("https://"))
@@ -65,6 +73,8 @@ namespace Q42.Wheels.Gimmage.Config
           return SourceType.ftp;
         if (Directory.ToLower().StartsWith("\\"))
           return SourceType.share;
+
+        //default unknown
         return SourceType.file;
       }
     }

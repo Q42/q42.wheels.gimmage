@@ -82,7 +82,6 @@
     <Compile Include="GimmageHelper.cs" />
     <Compile Include="GimmageModel.cs" />
     <Compile Include="GimmageResult.cs" />
-    <Compile Include="GimmageRoute.cs" />
     <Compile Include="GimmageServer.cs" />
     <Compile Include="GimmageUrl.cs" />
     <Compile Include="HttpImageServer.cs" />

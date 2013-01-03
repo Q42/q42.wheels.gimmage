@@ -1,10 +1,12 @@
 ﻿GET IT RUNNING
 =======
-To initialize Gimmage in your MVC application append the following to your global.asax:
+To initialize Gimmage in your MVC application append the following route to your global.asax:
 
-proteted void Application_Start(){
-  Q42.Wheels.Gimmage.GimmageServer.RegisterRoutes(RouteTable.Routes);
+protected void Application_Start(){
+	GimmageServer.RegisterRoutes(routes);
 }
+
+This will initialize Gimmage and register the default route /gimmage/source/template/filename for use
 
 DEPENDENCYS
 =======

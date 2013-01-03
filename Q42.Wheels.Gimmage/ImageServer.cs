@@ -25,6 +25,8 @@ namespace Q42.Wheels.Gimmage
 
     public ImageServer()
     {
+      log.Debug("Initializing Gimmage engine");
+
       loadGimmageTemplates();
 
       //initialize sources cache dictionary
@@ -32,6 +34,7 @@ namespace Q42.Wheels.Gimmage
       {
         sourceCache.Add(el.Name.ToLowerInvariant(), el);
       }
+      log.Debug("Gimmage Engine successfully initialized");
     }
 
     /// <summary>
@@ -91,7 +94,8 @@ namespace Q42.Wheels.Gimmage
         return ConfigTools.GetDirectory(sourceDir, true);
       }
 
-      throw new Exception("Source is not of valid type: " + source.Name);
+      //all other types of sources have no 'original' folder, return the cache dir in these cases
+      return ConfigTools.GetDirectory(GimmageConfig.Config.Cache.SourceDir.FullName, false);
     }
 
     /// <summary>
