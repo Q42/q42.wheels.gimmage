@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>Mark van Straten</authors>
+    <owners>$author$</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Cleanup of Gimmage, extracted to NuGet package</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>Q42 Q42.Wheels Gimmage</tags>    
+    
+	<dependencies>
+	  <dependency id="log4net" version="1.2.10"/>	  
+
+    </dependencies>
+	<frameworkAssemblies>
+	  <frameworkAssembly assemblyName="System" targetFramework="net40" />
+	  <frameworkAssembly assemblyName="System.Core"  targetFramework="net40"  />
+	</frameworkAssemblies>			
+  </metadata>
+	<files>
+	<!-- strange, when i set target to lib\net40 (which it should be) i get an error from nuget-->
+	  <file src="bin\Debug\Q42.Wheels.Gimmage.*" target="lib" /> 
+	</files>    
+</package>
