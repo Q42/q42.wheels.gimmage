@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading;
 using Q42.Wheels.Gimmage.Config;
@@ -59,9 +60,14 @@ namespace Q42.Wheels.Gimmage
             }
           }
         }
+        catch (ReflectionTypeLoadException ex)
+        {
+          var messages = from exception in ex.LoaderExceptions select exception.Message;
+          log.ErrorFormat("Exception raised while searching Templates extending AbstractTemplate: {1}{0}", string.Join(Environment.NewLine, messages), Environment.NewLine);
+        }
         catch (Exception ex)
         {
-          log.Error("Exception raised wihle searching Templates extending AbstractTemplate", ex);
+          log.Error("Exception raised while searching Templates extending AbstractTemplate", ex);
         }
       }
     }
