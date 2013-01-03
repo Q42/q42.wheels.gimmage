@@ -6,7 +6,15 @@ protected void Application_Start(){
 	GimmageServer.RegisterRoutes(routes);
 }
 
-This will initialize Gimmage and register the default route /gimmage/source/template/filename for use
+This will initialize Gimmage and register the default route /gimmage/source/template/filename for use. Alternatively you can use this one to modify the url:
+
+protected void Application_Start(){
+  routes.MapRoute("Q42.Wheels.Gimmage", "gimmage/{source}/{template}/{*filename}",
+    new { controller = "Gimmage", action = "Index" },
+    new[] { typeof(GimmageController).Namespace });
+}
+
+But the Gimmage system will then be initialized upon first retrieval of an image
 
 DEPENDENCYS
 =======
