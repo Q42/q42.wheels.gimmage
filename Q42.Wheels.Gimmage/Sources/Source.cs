@@ -11,6 +11,11 @@ namespace Q42.Wheels.Gimmage.Sources
       Type = type;
     }
 
+    /// <summary>
+    /// only filled if Type == Type.db
+    /// </summary>
+    public string DatabaseConnectionStringName { get; set; }
+
     public string SourcePath { get; set; }
 
     public string Name { get; set; }

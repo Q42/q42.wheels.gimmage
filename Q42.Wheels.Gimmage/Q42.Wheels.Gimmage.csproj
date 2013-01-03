@@ -8,8 +8,8 @@
     <ProjectGuid>{089EC104-62A7-43D4-83CC-C8314BD799C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Q42.Wheels.Gimmage.Mvc</RootNamespace>
-    <AssemblyName>Q42.Wheels.Gimmage.Mvc</AssemblyName>
+    <RootNamespace>Q42.Wheels.Gimmage</RootNamespace>
+    <AssemblyName>Q42.Wheels.Gimmage</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Q42.Wheels.Gimmage.Mvc.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Q42.Wheels.Gimmage.xml</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Q42.Wheels.Gimmage.Mvc.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Q42.Wheels.Gimmage.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ws04|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -118,7 +118,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
-    <None Include="Q42.Wheels.Gimmage.Mvc.nuspec" />
+    <None Include="Q42.Wheels.Gimmage.nuspec" />
     <Content Include="web.config.transform">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

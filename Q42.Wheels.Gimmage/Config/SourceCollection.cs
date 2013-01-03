@@ -3,7 +3,7 @@ using System.Configuration;
 
 namespace Q42.Wheels.Gimmage.Config
 {
-  internal class SourceCollection : ConfigurationElementCollection
+  public sealed class SourceCollection : ConfigurationElementCollection
   {
     [ConfigurationProperty("default")]
     public string Default

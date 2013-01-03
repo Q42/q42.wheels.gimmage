@@ -5,7 +5,7 @@ using Q42.Wheels.Gimmage.Interfaces;
 
 namespace Q42.Wheels.Gimmage.Config
 {
-  internal class SourceElement : ConfigurationElement, ISource
+  public sealed class SourceElement : ConfigurationElement, ISource
   {
     [ConfigurationProperty("name", IsRequired = true, IsKey = true)]
     public string Name
@@ -41,7 +41,7 @@ namespace Q42.Wheels.Gimmage.Config
     }
 
     [ConfigurationProperty("connectionStringName")]
-    public string ConnectionStringName
+    public string DatabaseConnectionStringName
     {
       get
       {

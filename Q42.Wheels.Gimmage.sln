@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gimmage.Mvc", "Q42.Wheels.Gimmage.Mvc\Gimmage.Mvc.csproj", "{089EC104-62A7-43D4-83CC-C8314BD799C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q42.Wheels.Gimmage", "Q42.Wheels.Gimmage\Q42.Wheels.Gimmage.csproj", "{089EC104-62A7-43D4-83CC-C8314BD799C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{007FFB47-4ADF-4DA3-89F4-4F7837406409}"
 	ProjectSection(SolutionItems) = preProject

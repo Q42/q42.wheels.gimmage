@@ -334,7 +334,7 @@ namespace Q42.Wheels.Gimmage
       // Todo: store in local cache
       if (fileName.EndsWith(".pdf"))
       {
-        SendToResponse(response, GetImageStreamFromDatabase(fileName), DateTime.MinValue, "application/pdf");
+        SendToResponse(response, GetImageStreamFromDatabase(source, fileName), DateTime.MinValue, "application/pdf");
         return;
       }
 
@@ -369,7 +369,7 @@ namespace Q42.Wheels.Gimmage
                 if (!originalFile.Exists)
                 {
                   //retrieve original from database and save it to disk
-                  originalImgData = GetImageStreamFromDatabase(fileName);
+                  originalImgData = GetImageStreamFromDatabase(source, fileName);
                   try{
                     using (FileStream fs = new FileStream(originalFile.ToString(), FileMode.Create, FileAccess.Write))
                     {
@@ -434,12 +434,18 @@ namespace Q42.Wheels.Gimmage
     /// </summary>
     /// <param name="fileName"></param>
     /// <returns></returns>
-    private static byte[] GetImageStreamFromDatabase(string fileName)
+    private static byte[] GetImageStreamFromDatabase(ISource source, string fileName)
     {
       if(log.IsDebugEnabled) log.DebugFormat("Going to retrieve image data from database for filename '{0}'", fileName);
 
+      if (source.Type != SourceType.db)
+        throw new ArgumentException(string.Format("Source {0} is not of type 'db' but '{1}', can not serve image from database", source.Name, source.Type));
+
+      if (ConfigurationManager.ConnectionStrings[source.DatabaseConnectionStringName] == null)
+        throw new ConfigurationErrorsException(string.Format("Could not find connectionstringName '{0}' in the configurations ConnectionStrings section", source.DatabaseConnectionStringName));
+
       byte[] imgData = null;
-      using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["n2cms"].ConnectionString))
+      using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings[source.DatabaseConnectionStringName].ConnectionString))
       {
         conn.Open();
         using (SqlCommand comm = conn.CreateCommand())

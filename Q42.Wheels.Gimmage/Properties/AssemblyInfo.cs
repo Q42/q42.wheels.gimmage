@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Q42.Wheels.Gimmage.Mvc")]
-[assembly: AssemblyDescription("Gimmage image scaler")]
+[assembly: AssemblyDescription("[DEPRECATED] Gimmage is a tool to apply filters to images and serve the end results.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Q42")]
 [assembly: AssemblyProduct("Q42.Wheels.Gimmage.Mvc")]

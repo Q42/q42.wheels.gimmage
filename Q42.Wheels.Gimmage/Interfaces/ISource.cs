@@ -5,6 +5,7 @@ namespace Q42.Wheels.Gimmage.Interfaces
   {
     string Name { get; }
     string Source { get; }
+    string DatabaseConnectionStringName { get; }
     SourceType Type { get; }
   }
 }

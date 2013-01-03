@@ -6,3 +6,6 @@ obj
 
 .sonar
 
+#do not track packages because we use package restore. only add repositories.config file
+packages/*
+!packages/repositories.config

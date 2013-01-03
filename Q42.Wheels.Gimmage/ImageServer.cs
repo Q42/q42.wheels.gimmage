@@ -52,12 +52,13 @@ namespace Q42.Wheels.Gimmage
             {
               AbstractTemplate template = System.Activator.CreateInstance(type) as AbstractTemplate;
               templateCache.Add(template.Name, template);
+              log.DebugFormat("Found image template: {0}", template.GetType());
             }
           }
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-          // FIXME: let's at least log these errors
+          log.Error("Exception raised wihle searching Templates extending AbstractTemplate", ex);
         }
       }
     }

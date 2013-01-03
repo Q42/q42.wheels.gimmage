@@ -4,7 +4,7 @@ using Q42.Wheels.Gimmage.Tooling;
 
 namespace Q42.Wheels.Gimmage.Config
 {
-  internal class GimmageConfigurationSection : ConfigurationSection
+  public sealed class GimmageConfigurationSection : ConfigurationSection
   {
     [ConfigurationProperty("defaultTemplate", IsRequired = false, DefaultValue = "default")]
     public string DefaultTemplate
