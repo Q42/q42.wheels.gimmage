@@ -354,8 +354,9 @@ namespace Q42.Wheels.Gimmage
           {
             //check if original file exists on disk or retrieve it from the database
             string path = getDBImageCachePath(source, fileName);
-            if (!Directory.Exists(path))
-              Directory.CreateDirectory(path);
+            var actualDirectory = Path.GetDirectoryName(Path.Combine(path, fileName)); // If there's a directory name in filename
+            if (!Directory.Exists(actualDirectory))
+              Directory.CreateDirectory(actualDirectory);
 
             byte[] originalImgData = null;
             FileInfo originalFile = new FileInfo(Path.Combine(path, fileName));
