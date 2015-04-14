@@ -1,6 +1,8 @@
 # q42.wheels.gimmage
 
-This repository contains an outdated image scaler for c# MVC. :warning: This code is no longer maintained! :warning: Here be dragons.
+This repository contains an outdated image scaler for C# MVC 
+
+:arrow_right: :exclamation::warning: This code is no longer maintained! :warning::exclamation: :arrow_left:
 
 ﻿GET IT RUNNING
 =======
