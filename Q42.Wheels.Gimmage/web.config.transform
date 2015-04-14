@@ -7,10 +7,10 @@
   <gimmage>
     <sources>
       <!-- type defaults to file but then requires dir to be filled-->
-      <add name="file-source" dir="C:\Projects\NegenTwee\Gimmage" />
-      <add name="database-source" dir="C:\Projects\NegenTwee\Gimmage" connectionStringName="n2cms" type="db" />
+      <add name="file-source" dir="C:\Projects\myproject\Gimmage" />
+      <add name="database-source" dir="C:\Projects\myproject\Gimmage" connectionStringName="n2cms" type="db" />
     </sources>
-    <cache enabled="true" dir="C:\Projects\NegenTwee\GimmageCache" />
-    <backup enabled="false" dir="C:\Projects\NegenTwee\GimmageBackup" />
+    <cache enabled="true" dir="C:\Projects\myproject\GimmageCache" />
+    <backup enabled="false" dir="C:\Projects\myproject\GimmageBackup" />
   </gimmage>
 </configuration>
